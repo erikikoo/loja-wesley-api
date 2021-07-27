@@ -10,7 +10,8 @@
 #   https://dev.mysql.com/doc/refman/5.7/en/password-hashing.html
 #
 default: &default
-  adapter: mysql2
+  # adapter: mysql2
+  adapter: pg
   # encoding: utf8mb4
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: root
@@ -50,6 +51,6 @@ test:
 #
 production:
   <<: *default
-  database: loja_api_production
-  username: loja_api
-  password: <%= ENV['LOJA_API_DATABASE_PASSWORD'] %>
+  database: <%= ENV['DATABASE_URL'] %>
+  # username: loja_api
+  # password: <%= ENV['LOJA_API_DATABASE_PASSWORD'] %>

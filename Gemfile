@@ -5,6 +5,7 @@ ruby '2.6.8'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4'
+
 # Use mysql as the database for Active Record
 # gem 'mysql2', '~> 0.5'
 # Use Puma as the app server
@@ -26,13 +27,13 @@ gem 'bootsnap', '>= 1.4.4', require: false
 gem 'rack-cors'
 
 group :development, :test do
-  gem 'mysql2', '~> 0.5'
+  # gem 'mysql2', '~> 0.5'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 group :production do
-  gem 'pg'
+  gem 'pg', '~> 0.18.4'
 end
 
 group :development do
