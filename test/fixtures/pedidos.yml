@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  numero_pedido: MyString
+  data_entrega: MyString
+  urgencia: MyString
+  forma_pagamento: MyString
+  valor_venda: MyString
+  desconto: MyString
+  vendendor: MyString
+  cliente: one
+
+two:
+  numero_pedido: MyString
+  data_entrega: MyString
+  urgencia: MyString
+  forma_pagamento: MyString
+  valor_venda: MyString
+  desconto: MyString
+  vendendor: MyString
+  cliente: two
